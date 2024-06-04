@@ -2,12 +2,15 @@
   "name": "fto-oop",
   "version": "1.0.0",
   "description": "Canvas chart project",
+  "homepage": "https://igorsharay.github.io/oop-chart",
   "private": true,
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +32,8 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
