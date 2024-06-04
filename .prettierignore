@@ -1,0 +1,11 @@
+node_modules
+build
+dist
+cicd
+nginx
+.git
+.idea
+.husky
+package-lock.json
+yarn.lock
+inject
